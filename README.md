@@ -1,4 +1,4 @@
-# Nautilus Thumbnail Generator
+# Gnome Files / Nautilus Thumbnail Generator
 
 The Nautilus Thumbnail Generator is a Python-based service that automatically creates thumbnails for images in specified directories. It integrates with the Nautilus file manager, ensuring that thumbnails are generated and updated as files are added or modified.
 This approach serves as a temporary solution for situations where thumbnails fail to load while accessing the recent menu or using the file picker.
