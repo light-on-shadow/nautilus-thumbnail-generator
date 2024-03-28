@@ -63,4 +63,3 @@ chmod +x uninstall.sh
 ```
 
 This script will stop the service, remove installed files, and clean up the system service entries.
-# nautilus-thumbnail-generator
