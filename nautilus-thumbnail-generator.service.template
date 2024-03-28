@@ -1,0 +1,10 @@
+[Unit]
+Description=Nautilus Thumbnail Generator Service
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 /usr/local/bin/nautilus-thumbnail-generator.py
+
+[Install]
+WantedBy=default.target
+
