@@ -10,6 +10,7 @@ This approach serves as a temporary solution for situations where thumbnails fai
 
 ## Prerequisites
 
+- Tested on Fedora 39
 - systemd
 - Python 3
 - `watchdog` Python package
