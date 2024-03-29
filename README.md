@@ -7,6 +7,7 @@ This approach serves as a temporary solution for situations where thumbnails fai
 
 - Generates thumbnails for images efficiently in the background.
 - Watches for new or updated files in real-time to keep thumbnails current.
+- TODO use other thumbnailers depending on the format
 
 ## Prerequisites
 
