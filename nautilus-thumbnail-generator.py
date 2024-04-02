@@ -43,6 +43,7 @@ class ThumbnailGenerator:
         event_handler = FileSystemEventHandler()
         event_handler.on_created = lambda event: self.generate_thumbnail(event.src_path)
         event_handler.on_modified = lambda event: self.generate_thumbnail(event.src_path)
+        event_handler.on_moved = lambda event: self.generate_thumbnail(event.dest_path)  # Handle rename
 
         observer = Observer()
         observer.schedule(event_handler, self.directory, recursive=True)
