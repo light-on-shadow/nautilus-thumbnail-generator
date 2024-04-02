@@ -1,4 +1,4 @@
-# Nautilus Thumbnail Generator
+# Gnome Files / Nautilus Thumbnail Generator
 
 The Nautilus Thumbnail Generator is a Python-based service that automatically creates thumbnails for images in specified directories. It integrates with the Nautilus file manager, ensuring that thumbnails are generated and updated as files are added or modified.
 This approach serves as a temporary solution for situations where thumbnails fail to load while accessing the recent menu or using the file picker.
@@ -7,9 +7,11 @@ This approach serves as a temporary solution for situations where thumbnails fai
 
 - Generates thumbnails for images efficiently in the background.
 - Watches for new or updated files in real-time to keep thumbnails current.
+- TODO use other thumbnailers depending on the format
 
 ## Prerequisites
 
+- Tested on Fedora 39
 - systemd
 - Python 3
 - `watchdog` Python package
@@ -44,6 +46,8 @@ This script will install the necessary files and set up a user service to run th
 
 Once installed, the Nautilus Thumbnail Generator will start automatically and monitor the specified directory (default is ~/Pictures). Thumbnails will be generated in the appropriate cache directory and used by Nautilus or other file managers that follow the FreeDesktop.org thumbnail specification.
 
+**First run can take a long time to generate all thumbnails, depends on the scope as well**
+
 ## Uninstallation
 
 To uninstall the Nautilus Thumbnail Generator, follow these steps:
@@ -62,4 +66,3 @@ chmod +x uninstall.sh
 ```
 
 This script will stop the service, remove installed files, and clean up the system service entries.
-# nautilus-thumbnail-generator
