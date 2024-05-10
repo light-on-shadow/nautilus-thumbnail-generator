@@ -48,7 +48,7 @@ Once installed, the Nautilus Thumbnail Generator will start automatically and mo
 
 **First run can take a long time to generate all thumbnails, depends on the scope as well**
 
-## Uninstallation
+## Uninstall
 
 To uninstall the Nautilus Thumbnail Generator, follow these steps:
 
